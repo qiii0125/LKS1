@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 10" name="EsemkaLaundryDB">
+  <DataContextMoniker Name="/EsemkaLaundryDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d1a0baae-f9cd-4b38-b5c6-704d0af1e96e" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/EsemkaLaundryDBDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="064e2a0c-9403-46ae-bd65-7270f2490bf2" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b74b8cf-1d63-4a1c-8b7e-67413a2ad870" absoluteBounds="0.75, 2.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/EsemkaLaundryDBDataContext/Unit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f39cf4f5-f0f7-4bc1-b377-abf2bbd1c5a0" absoluteBounds="0.765, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="749890be-39e0-44a7-bb81-49dc1092fc4e" absoluteBounds="3.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EsemkaLaundryDBDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb7961bf-2a31-43e3-8ae3-f301a86c270b" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e430cbf3-758a-45f5-bde1-93ad34feea6b" absoluteBounds="3.75, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/EsemkaLaundryDBDataContext/DetailDeposit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1a58b1d-6ee7-4a0f-ba2f-50880f2e9a02" absoluteBounds="3.765, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57713baa-0246-4ec5-9ece-9e8bad47ae0b" absoluteBounds="6.75, 0.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/EsemkaLaundryDBDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="63b169a0-fa36-46a1-a74c-edbfa026eebe" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3726652a-1d02-4b5b-9a4d-486684ebfc1b" absoluteBounds="0.75, 6.75, 2, 1.7708968098958326">
+      <DataClassMoniker Name="/EsemkaLaundryDBDataContext/HeaderDeposit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5471aba3-1358-4af8-b15e-e81ffc1d35b4" absoluteBounds="0.765, 7.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a3a738a-5214-4f3b-b3c3-cf665fa48dc7" absoluteBounds="3.75, 6.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/EsemkaLaundryDBDataContext/Job" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1c2c3a0-9296-4830-b96e-b59fa29953e5" absoluteBounds="3.765, 7.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18a59296-1d67-4ec1-a40c-d48341759ba8" absoluteBounds="6.75, 4.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EsemkaLaundryDBDataContext/Package" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2524ba17-c5ec-4366-9d75-34865da7c059" absoluteBounds="6.765, 5.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6c87ef57-c514-47a2-a6ac-1c26ecfec2cd" absoluteBounds="6.75, 7.75, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/EsemkaLaundryDBDataContext/PrepaidPackage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd29501f-86a2-4259-8789-bbeeae974650" absoluteBounds="6.765, 8.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bd358e4b-d164-4e6b-95b5-e3af6bce09e1" absoluteBounds="9.75, 0.75, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/EsemkaLaundryDBDataContext/Service" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36b6a6be-0bb2-4112-b03d-1fd5f723e044" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

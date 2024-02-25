@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbmaster" Class="EsemkaLaundryDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=FS-DESKTOP;Initial Catalog=dbmaster;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="SpeedRun.Properties.Settings" SettingsPropertyName="dbmasterConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Category" Member="Categories">
+    <Type Name="Category">
+      <Column Name="Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Unit" Member="Units">
+    <Type Name="Unit">
+      <Column Name="Id" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customer" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DetailDeposit" Member="DetailDeposits">
+    <Type Name="DetailDeposit">
+      <Column Name="Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdDeposit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdService" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="IdPrepaidPackage" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="PriceUnit" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="TotalUnit" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="CompletedDatetime" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employee" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DateofBirth" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IdJob" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HeaderDeposit" Member="HeaderDeposits">
+    <Type Name="HeaderDeposit">
+      <Column Name="Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdCustomer" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="IdEmployee" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TransactionDatetime" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CompleteEstimationDatetime" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Job" Member="Jobs">
+    <Type Name="Job">
+      <Column Name="Id" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Package" Member="Packages">
+    <Type Name="Package">
+      <Column Name="Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdService" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="TotalUnit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PrepaidPackage" Member="PrepaidPackages">
+    <Type Name="PrepaidPackage">
+      <Column Name="Id" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="IdCustomer" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="IdPackage" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StartDatetime" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="CompletedDatetime" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Service" Member="Services">
+    <Type Name="Service">
+      <Column Name="Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(512)" CanBeNull="true" />
+      <Column Name="IdCategory" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdUnit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PriceUnit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EstimationDuration" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
